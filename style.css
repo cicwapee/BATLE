@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.title {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: Fantasy, sans-serif;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+.menu a {
+    display: block;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.menu a img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.menu a:hover img {
+    transform: scale(1.2);
+}
