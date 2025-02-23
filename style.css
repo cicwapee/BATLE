@@ -5,13 +5,14 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #FFFFFF;
+    color: black; /* Основной цвет текста черный */
 }
 .title {
-    font-size: 80px;
+    font-size: 50px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 2px;
     font-family: Fantasy, sans-serif;
 }
 .menu {
@@ -32,4 +33,38 @@ body {
 }
 .menu a:hover img {
     transform: scale(1.2);
+}
+.kkp {
+    font-size: 50px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-family: Fantasy, sans-serif;
+    color: black; 
+    text-decoration: none; 
+}
+.kkp a {
+    color: black; /* Цвет текста ссылки черный */
+    text-decoration: none; /* Убирает подчеркивание */
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Легкий фон */
+    border-radius: 10px; /* Скругленные края */
+    transition: all 0.3s ease; /* Плавный эффект */
+    display: inline-block;
+}
+
+.kkp a:visited {
+    color: black; /* Оставляет цвет черным после посещения */
+}
+
+.kkp a:hover {
+    background-color: rgb(0, 0, 0); /* Красный фон при наведении */
+    color: white; /* Белый текст */
+    transform: scale(1.1); /* Увеличение */
+}
+
+.kkp a:active {
+    background-color: rgb(255, 255, 255); /* Темно-красный при нажатии */
 }
